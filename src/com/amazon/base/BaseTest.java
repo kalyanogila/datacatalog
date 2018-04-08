@@ -48,7 +48,12 @@ public class BaseTest {
 		if(browserName.equals("firefox")){
 			System.setProperty("webdriver.gecko.driver", "lib/geckodriver.exe");	
 			driver = new FirefoxDriver(); 
+		}	
+		if(browserName.equals("chrome")){
+				System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");	
+				driver = new ChromeDriver(); 
 		}
+		
 		
 	
 		driver.manage().window().maximize();
