@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="data Catalog book search in Amazon.com">
+	<test name="Data Catalog Book Details">
+		<classes>
+		<class name="com.amazon.tests.SearchResultsTest"></class>
+		<class name="com.amazon.tests.KindleDetailsTest"></class>
+		<class name="com.amazon.tests.PaperBackDetailsTest"></class>
+		<class name="com.amazon.tests.OffersDetailsTest"></class>
+		</classes>
+	</test>
+</suite>

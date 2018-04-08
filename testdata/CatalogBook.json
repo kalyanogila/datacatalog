@@ -1,0 +1,71 @@
+{
+	"title":"Catalog It!: A Guide to Cataloging School Library Materials, 3rd Edition",
+	"author":"Allison G. Kaplan",
+	"ISBN13":"978-1440835803",
+	"ISBN10":"1440835802",
+	"edition":"3rd Edition",
+	"kindledetails":
+	{
+		"cost":"$60.00",
+		"pages":"248 pages",
+		"enhancedsetting":"true",
+		"supporteddevices":[
+		"Kindle for iPad","Kindle for iPhone","Kindle Touch","Fire HD 10"
+		]
+	},
+	"paperbackdetails":
+	{
+		"paperbackCostRange":"$24.00 - $60.00",
+		"newBookCostStartingRange":"$60.00",
+		"usedBookCostStartingRange":"$40.20",
+		"rentalBookCostStartingRange":"$24.00",
+		"newBookBuyingChoices":"12",
+		"usedBookBuyingChoices":"25",
+		"rentalBookBuyingChoices":"1"
+	
+	},
+	"customerRating":
+	{
+		"totalCustomerReviews":"4",
+		"totalRating":"3.8 out of 5 stars",
+		"5 star":"75%",
+		"4 star":"0%",
+		"3 star":"0%",
+		"2 star":"0%",
+		"1 star":"25%"
+	
+	},
+	"newBookOffers":
+	[
+		{"seller":"amazon.com","price":"$60.00","shipping":"FREE"},
+		{"seller":"Stork Group","price":"$64.57","shipping":"$3.99"},
+		{"seller":"Green Orbit","price":"$66.44","shipping":"$7.02"}
+    ],
+    "rentalBookOffers":
+    [
+    	{"seller":"amazon.com","price":"$24.00","shipping":"FREE"}
+    ],
+    "usedLikeNewBookOffers":
+    [
+     	{"seller":"Green Orbit","price":"$66.36","shipping":"$7.02"},
+		{"seller":"Wordery USA","price":"$69.17","shipping":"FREE"}
+    ],
+    "usedVeryGoodBookOffers":
+    [
+    	{"seller":"BooKnackrh","price":"$73.49","shipping":"FREE"},
+		{"seller":"PBShop UK","price":"$68.16","shipping":"FREE"},
+		{"seller":"newtownvideos","price":"$75.52","shipping":"$6.49"}
+    ],
+    "usedGoodBookOffers":
+    [
+    	{"seller":"FlippingPages","price":"$500.00","shipping":"FREE"},
+		{"seller":"HPB-Dallas","price":"$40.26","shipping":"$3.99"},
+		{"seller":"HPB-Ohio","price":"$40.26","shipping":"$3.99"}
+    ],
+    "usedAcceptableBookOffers":
+    [
+    	{"seller":"Easy_Sell_Items","price":"$3,099.00","shipping":"$3.99"},
+		{"seller":"Books Mela","price":"$60.63","shipping":"$3.00"}
+    ]
+    	
+}
