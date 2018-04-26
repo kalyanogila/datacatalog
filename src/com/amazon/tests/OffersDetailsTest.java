@@ -73,7 +73,7 @@ public class OffersDetailsTest extends BaseTest {
 	
 	 @BeforeMethod
 	public void searchBooks() {
-		homePage.searchText("search-alias=stripbooks", "dataCatalog");
+		homePage.searchText("search-alias=stripbooks", "data Catalog");
 		bookDetailsPage=homePage.clickOnBook("Catalog It!: A Guide to Cataloging School Library Materials, 3rd Edition");
 		
 		PaperBackDetailsTab paperback= bookDetailsPage.clickOnPaperback();
