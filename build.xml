@@ -1,0 +1,76 @@
+<project name="Amazon Data Catalog" default="testng-execution" >
+
+	<property environment="env"></property>
+	<property name="base.dir" location="."></property>
+  	<property name="src" location="${base.dir}/src"></property>
+  	<property name="build" location="${base.dir}/build"></property>
+  	<property name="lib" location="${base.dir}/lib"></property>
+  	<property name="dist" location="${base.dir}/dist"></property>
+  	<property name="config" location="${base.dir}/config"></property>
+		<property file="${base.dir}/config/config.properties"></property>
+			<property file="${base.dir}/config/log4j.properties"></property>
+  	<property name="data" location="${base.dir}/data"></property>  	
+	<property name="datacatalog.jar" location="datacatalog.jar"></property>
+	<property name="report-dir" value="${basedir}/Test-Report" />
+	<property name="testng-report-dir" value="${report-dir}/TestNGreport" />
+	
+ <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+	
+	
+	<path id="datacatalog.classpath">
+	    <fileset dir="${lib}">
+	      <include name="*.jar"></include>
+	    
+	    </fileset>
+		
+  	</path>
+  	
+  	<path id="full.classpath">
+  		<path refid="datacatalog.classpath"/>
+		<pathelement location="${src}"/>
+ 	 	<pathelement location="${build}"/>
+	    <pathelement path="data"/>
+	    <pathelement path="config"/>
+	    <pathelement location="config"/>
+		
+	    <fileset dir="${base.dir}">
+		
+	      <include name="*.jar"></include>
+	    </fileset>
+		
+  	</path>
+
+
+	<target name="runpre">
+		<antcall target="clean"/>
+		<antcall target="build"/>
+		
+	</target>
+
+	
+
+	<target name="clean">
+		<echo message="Deleting the build and dist folder"/>
+		<delete dir="${build}" failonerror="false"/>
+		<delete dir="${dist}" failonerror="false"/>
+		<mkdir dir="${report-dir}" />
+	</target>
+	
+	<target name="build">
+		<echo message="creating build folder"/>
+		<mkdir dir="${build}" />
+		<mkdir dir="${dist}" />
+		<mkdir dir="${report-dir}" />
+		<antcall target="compile"/>
+	</target>
+
+	<target name="compile" description="Compiles the Java Source">
+		<echo message="Compiling the Sources in src folder"/>
+		<javac  source="${source}" target="${target}" srcdir="${src}" destdir="${build}" classpathref="datacatalog.classpath" includes="**/*.java" excludes="**/*.txt" fork="yes" memoryInitialSize="128m" memoryMaximumSize="1024m" debug="yes">
+		</javac>
+		<jar jarfile="${datacatalog.jar}" basedir="${build}"></jar>
+	</target>	
+
+		
+</project>
